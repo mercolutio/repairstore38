@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         counters.forEach(counter => {
             const target = parseInt(counter.getAttribute('data-target'));
+            const isDecimal = counter.hasAttribute('data-decimal');
             const duration = 2000;
             const step = target / (duration / 16);
             let current = 0;
@@ -79,10 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const update = () => {
                 current += step;
                 if (current < target) {
-                    counter.textContent = Math.floor(current).toLocaleString('de-DE');
+                    const val = Math.floor(current);
+                    counter.textContent = isDecimal ? (val / 10).toFixed(1) : val.toLocaleString('de-DE');
                     requestAnimationFrame(update);
                 } else {
-                    counter.textContent = target.toLocaleString('de-DE');
+                    counter.textContent = isDecimal ? (target / 10).toFixed(1) : target.toLocaleString('de-DE');
                 }
             };
 
