@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const backToTop = document.getElementById('backToTop');
 
     window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY > 50;
-        navbar.classList.toggle('scrolled', scrolled);
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
         backToTop.classList.toggle('visible', window.scrollY > 400);
     });
 
@@ -28,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.toggle('active');
     });
 
-    // Close menu on link click
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
@@ -72,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         counters.forEach(counter => {
             const target = parseInt(counter.getAttribute('data-target'));
-            const isDecimal = counter.hasAttribute('data-decimal');
             const duration = 2000;
             const step = target / (duration / 16);
             let current = 0;
@@ -80,11 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const update = () => {
                 current += step;
                 if (current < target) {
-                    const val = Math.floor(current);
-                    counter.textContent = isDecimal ? (val / 10).toFixed(1) : val.toLocaleString('de-DE');
+                    counter.textContent = Math.floor(current).toLocaleString('de-DE');
                     requestAnimationFrame(update);
                 } else {
-                    counter.textContent = isDecimal ? (target / 10).toFixed(1) : target.toLocaleString('de-DE');
+                    counter.textContent = target.toLocaleString('de-DE');
                 }
             };
 
@@ -97,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Scroll reveal animations ---
     const fadeElements = document.querySelectorAll(
-        '.service-card, .about-card, .feature, .step, .review-card, .contact-item'
+        '.service-card, .about-card, .feature, .review-card, .contact-item, .price-table, .partner-logo'
     );
 
     fadeElements.forEach(el => el.classList.add('fade-in'));
@@ -114,32 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
     fadeElements.forEach(el => observer.observe(el));
-
-    // --- Contact form ---
-    const contactForm = document.getElementById('contactForm');
-
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const btn = contactForm.querySelector('button[type="submit"]');
-        const originalHTML = btn.innerHTML;
-
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Wird gesendet...';
-        btn.disabled = true;
-
-        // Simulate form submission
-        setTimeout(() => {
-            btn.innerHTML = '<i class="fas fa-check"></i> Erfolgreich gesendet!';
-            btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-
-            setTimeout(() => {
-                btn.innerHTML = originalHTML;
-                btn.style.background = '';
-                btn.disabled = false;
-                contactForm.reset();
-            }, 3000);
-        }, 1500);
-    });
 
     // --- Smooth scroll for all anchor links ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
