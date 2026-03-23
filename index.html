@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RepairStore38 - Ihr Experte für Smartphone-, Tablet- und Laptop-Reparaturen in Braunschweig und Umgebung. Schnell, professionell und günstig.">
+    <meta name="keywords" content="Handy Reparatur, Smartphone Reparatur, Tablet Reparatur, Laptop Reparatur, Braunschweig, Display Reparatur, Akku Tausch">
+    <title>RepairStore38 | Smartphone & Laptop Reparatur in Braunschweig</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-tools"></i>
+                Repair<span>Store38</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Start</a></li>
+                <li><a href="#services">Leistungen</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#process">Ablauf</a></li>
+                <li><a href="#reviews">Bewertungen</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <a href="tel:+4953112345678" class="nav-cta">
+                <i class="fas fa-phone"></i> Jetzt anrufen
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-shield-halved"></i> Geprüfte Qualität seit 2015
+                </div>
+                <h1>Ihr Gerät verdient die <span class="highlight">beste Reparatur</span></h1>
+                <p class="hero-subtitle">Professionelle Reparaturen für Smartphones, Tablets und Laptops in Braunschweig. Express-Service in nur 30 Minuten verfügbar.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i class="fas fa-calendar-check"></i> Termin vereinbaren
+                    </a>
+                    <a href="#services" class="btn btn-outline btn-lg">
+                        <i class="fas fa-wrench"></i> Unsere Leistungen
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="15000">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Reparaturen</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Zufriedenheit</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="30">0</span><span class="stat-suffix"> Min</span>
+                        <span class="stat-label">Express-Service</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <i class="fas fa-mobile-screen-button"></i>
+                        <div class="repair-animation">
+                            <div class="pulse-ring"></div>
+                            <div class="pulse-ring delay-1"></div>
+                            <div class="pulse-ring delay-2"></div>
+                            <i class="fas fa-screwdriver-wrench repair-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Unsere Leistungen</span>
+                <h2>Was wir für Sie <span class="highlight">reparieren</span></h2>
+                <p>Von der Display-Reparatur bis zum Wasserschaden – wir bringen Ihre Geräte wieder zum Laufen.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-screen"></i>
+                    </div>
+                    <h3>Display-Reparatur</h3>
+                    <p>Gebrochenes oder defektes Display? Wir tauschen es schnell und zuverlässig aus – für alle gängigen Modelle.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Original-Qualität</li>
+                        <li><i class="fas fa-check"></i> Ab 30 Minuten</li>
+                        <li><i class="fas fa-check"></i> 12 Monate Garantie</li>
+                    </ul>
+                    <span class="service-price">ab 49€</span>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Beliebt</div>
+                    <div class="service-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Akku-Tausch</h3>
+                    <p>Ihr Akku hält nicht mehr? Wir ersetzen ihn durch einen neuen, hochwertigen Akku für längere Laufzeit.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Premium-Akkus</li>
+                        <li><i class="fas fa-check"></i> Ab 20 Minuten</li>
+                        <li><i class="fas fa-check"></i> Sofort mehr Leistung</li>
+                    </ul>
+                    <span class="service-price">ab 39€</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3>Wasserschaden</h3>
+                    <p>Gerät ins Wasser gefallen? Schnelles Handeln ist entscheidend. Bringen Sie es sofort zu uns!</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Ultraschall-Reinigung</li>
+                        <li><i class="fas fa-check"></i> Korrosions-Schutz</li>
+                        <li><i class="fas fa-check"></i> Hohe Erfolgsquote</li>
+                    </ul>
+                    <span class="service-price">ab 59€</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Laptop-Reparatur</h3>
+                    <p>Ob Display, Tastatur oder Mainboard – wir reparieren Ihren Laptop professionell und schnell.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Alle Marken</li>
+                        <li><i class="fas fa-check"></i> Hardware & Software</li>
+                        <li><i class="fas fa-check"></i> Datenrettung möglich</li>
+                    </ul>
+                    <span class="service-price">ab 69€</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tablet-screen-button"></i>
+                    </div>
+                    <h3>Tablet-Reparatur</h3>
+                    <p>iPad oder Android-Tablet defekt? Wir reparieren alle gängigen Modelle schnell und günstig.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> iPad & Android</li>
+                        <li><i class="fas fa-check"></i> Glas & LCD</li>
+                        <li><i class="fas fa-check"></i> Express möglich</li>
+                    </ul>
+                    <span class="service-price">ab 59€</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Datenrettung</h3>
+                    <p>Wichtige Daten verloren? Wir retten Ihre Fotos, Kontakte und Dokumente von defekten Geräten.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Professionelle Tools</li>
+                        <li><i class="fas fa-check"></i> Vertraulich</li>
+                        <li><i class="fas fa-check"></i> Keine Daten = keine Kosten</li>
+                    </ul>
+                    <span class="service-price">ab 79€</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Why Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag"><i class="fas fa-heart"></i> Warum RepairStore38</span>
+                    <h2>Weil Ihr Gerät in <span class="highlight">besten Händen</span> ist</h2>
+                    <p>Seit 2015 sind wir Ihr vertrauenswürdiger Partner für Geräte-Reparaturen in Braunschweig. Unser erfahrenes Team setzt auf Qualität, Transparenz und faire Preise.</p>
+                    <div class="features-list">
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                            <div>
+                                <h4>Express-Reparatur</h4>
+                                <p>Viele Reparaturen erledigen wir in nur 30 Minuten – direkt vor Ort, während Sie warten.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                            <div>
+                                <h4>Garantie auf alle Arbeiten</h4>
+                                <p>Auf jede Reparatur erhalten Sie bis zu 12 Monate Garantie für Ihre Sicherheit.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-tag"></i></div>
+                            <div>
+                                <h4>Faire & transparente Preise</h4>
+                                <p>Keine versteckten Kosten. Sie erhalten vorab einen verbindlichen Kostenvoranschlag.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                            <div>
+                                <h4>Nachhaltigkeit</h4>
+                                <p>Reparieren statt wegwerfen – gut für Ihren Geldbeutel und die Umwelt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fas fa-award"></i></div>
+                        <h3>Zertifizierter Fachbetrieb</h3>
+                        <p>Geschulte Techniker mit jahrelanger Erfahrung</p>
+                    </div>
+                    <div class="about-card accent">
+                        <div class="about-card-icon"><i class="fas fa-star"></i></div>
+                        <h3>4.9 / 5 Sterne</h3>
+                        <p>Basierend auf über 500 Google-Bewertungen</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Persönliche Beratung</h3>
+                        <p>Individuelle Lösungen für jedes Problem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-route"></i> So funktioniert's</span>
+                <h2>In 4 Schritten zur <span class="highlight">Reparatur</span></h2>
+                <p>Einfach, schnell und unkompliziert – so läuft eine Reparatur bei uns ab.</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fas fa-phone-volume"></i></div>
+                    <h3>Kontakt aufnehmen</h3>
+                    <p>Rufen Sie uns an oder kommen Sie direkt vorbei. Wir beraten Sie gerne!</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fas fa-magnifying-glass"></i></div>
+                    <h3>Diagnose</h3>
+                    <p>Wir prüfen Ihr Gerät kostenlos und erstellen einen transparenten Kostenvoranschlag.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                    <h3>Reparatur</h3>
+                    <p>Unsere Techniker reparieren Ihr Gerät fachgerecht – oft sogar am selben Tag.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i class="fas fa-circle-check"></i></div>
+                    <h3>Abholung</h3>
+                    <p>Qualitätskontrolle bestanden? Holen Sie Ihr Gerät wie neu ab!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-star"></i> Kundenbewertungen</span>
+                <h2>Das sagen unsere <span class="highlight">Kunden</span></h2>
+                <p>Über 500 zufriedene Kunden vertrauen RepairStore38.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Super schneller Service! Mein iPhone Display wurde in nur 25 Minuten getauscht. Sieht aus wie neu. Absolut empfehlenswert!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">M</div>
+                        <div>
+                            <strong>Marco S.</strong>
+                            <span>iPhone 15 Display-Reparatur</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Mein Laptop hatte einen Wasserschaden und ich dachte, er sei verloren. Das Team hat ihn komplett gerettet – inklusive aller Daten!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">S</div>
+                        <div>
+                            <strong>Sarah K.</strong>
+                            <span>Laptop Wasserschaden</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Faire Preise, ehrliche Beratung und top Qualität. Bin jetzt Stammkunde und empfehle den Laden jedem weiter. Daumen hoch!"</p>
+                    <div class="review-author">
+                        <div class="review-avatar">T</div>
+                        <div>
+                            <strong>Thomas B.</strong>
+                            <span>Samsung Galaxy Akku-Tausch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag"><i class="fas fa-location-dot"></i> Kontakt</span>
+                    <h2>Besuchen Sie uns oder <span class="highlight">schreiben Sie uns</span></h2>
+                    <p>Wir freuen uns auf Ihre Anfrage! Kommen Sie gerne auch ohne Termin vorbei.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                            <div>
+                                <strong>Adresse</strong>
+                                <p>Musterstraße 12, 38100 Braunschweig</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <strong>Telefon</strong>
+                                <p><a href="tel:+4953112345678">0531 / 123 456 78</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>E-Mail</strong>
+                                <p><a href="mailto:info@repairstore38.de">info@repairstore38.de</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <strong>Öffnungszeiten</strong>
+                                <p>Mo–Fr: 10:00 – 19:00 Uhr<br>Sa: 10:00 – 16:00 Uhr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Reparatur anfragen</h3>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0531 / ...">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="device">Gerät</label>
+                            <select id="device" name="device">
+                                <option value="">Bitte wählen...</option>
+                                <option value="iphone">iPhone</option>
+                                <option value="samsung">Samsung Galaxy</option>
+                                <option value="huawei">Huawei</option>
+                                <option value="xiaomi">Xiaomi</option>
+                                <option value="ipad">iPad</option>
+                                <option value="tablet">Android Tablet</option>
+                                <option value="laptop">Laptop</option>
+                                <option value="other">Sonstiges</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Beschreibung des Problems *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Beschreiben Sie kurz, was mit Ihrem Gerät nicht stimmt..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <i class="fas fa-paper-plane"></i> Anfrage senden
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-tools"></i>
+                        Repair<span>Store38</span>
+                    </a>
+                    <p>Ihr Experte für professionelle Geräte-Reparaturen in Braunschweig. Schnell, zuverlässig und fair.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Start</a></li>
+                        <li><a href="#services">Leistungen</a></li>
+                        <li><a href="#about">Über uns</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="#services">Display-Reparatur</a></li>
+                        <li><a href="#services">Akku-Tausch</a></li>
+                        <li><a href="#services">Wasserschaden</a></li>
+                        <li><a href="#services">Datenrettung</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="#">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RepairStore38. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Nach oben scrollen">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
