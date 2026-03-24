@@ -121,4 +121,53 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- FAQ Accordion ---
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const item = btn.closest('.faq-item');
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item.active').forEach(el => el.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        });
+    });
+
+    // --- Contact Form Handler ---
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('formName').value;
+            const phone = document.getElementById('formPhone').value;
+            const device = document.getElementById('formDevice').value;
+            const problem = document.getElementById('formProblem').value;
+
+            const subject = encodeURIComponent('Reparaturanfrage von ' + name);
+            const body = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'Telefon: ' + phone + '\n' +
+                'Gerät: ' + device + '\n' +
+                'Problem: ' + problem
+            );
+            window.open('mailto:info@repairstore38.de?subject=' + subject + '&body=' + body);
+
+            contactForm.style.display = 'none';
+            document.getElementById('formSuccess').style.display = 'block';
+        });
+    }
+
+    // --- Extend fade-in to new elements ---
+    const newFadeElements = document.querySelectorAll('.faq-item, .guarantee-item');
+    newFadeElements.forEach(el => {
+        el.classList.add('fade-in');
+        observer.observe(el);
+    });
+
+    // --- Mobile CTA bar show/hide ---
+    const mobileCta = document.querySelector('.mobile-cta-bar');
+    if (mobileCta) {
+        window.addEventListener('scroll', () => {
+            mobileCta.classList.toggle('visible', window.scrollY > 300);
+        });
+    }
 });
