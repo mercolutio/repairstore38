@@ -38,7 +38,7 @@ jobs:
   # FTP Deploy
   deploy-ftp:
     runs-on: ubuntu-latest
-    if: vars.FTP_ENABLED == 'true'
+    continue-on-error: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
